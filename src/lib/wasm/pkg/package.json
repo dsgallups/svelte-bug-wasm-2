@@ -1,0 +1,20 @@
+{
+  "name": "frontend-wasm",
+  "type": "module",
+  "collaborators": [
+    "Daniel Gallups <dsgallups@protonmail.com>"
+  ],
+  "version": "0.0.1",
+  "files": [
+    "frontend_wasm_bg.wasm",
+    "frontend_wasm.js",
+    "frontend_wasm_bg.js",
+    "frontend_wasm.d.ts"
+  ],
+  "main": "frontend_wasm.js",
+  "types": "frontend_wasm.d.ts",
+  "sideEffects": [
+    "./frontend_wasm.js",
+    "./snippets/*"
+  ]
+}
