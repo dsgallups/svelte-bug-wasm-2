@@ -8,7 +8,10 @@ This code runs in vite dev mode:
 
 `npm run dev`
 
-## Prerequisites
+## Prerequisites (If choosing to compile)
+
+Note: this doesn't need to be done initially, the bindings and WASM exports are already available in this repo.
+
 You may have to install [rust](https://www.rust-lang.org/)
 and run the following command:
 `rustup target add wasm32-unknown-unknown`
