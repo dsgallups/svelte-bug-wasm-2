@@ -3,9 +3,7 @@
   import "../app.css";
   import { onMount } from "svelte";
 
-  let { children } = $props();
-
-  let mountState = $state("mounting");
+  let mountState = "mounting";
 
   onMount(async () => {
     console.log("mounting wasm");
@@ -18,6 +16,6 @@
 <div class="app">
   <main>
     <div>{mountState}</div>
-    <div>{@render children()}</div>
+    <div><slot /></div>
   </main>
 </div>
