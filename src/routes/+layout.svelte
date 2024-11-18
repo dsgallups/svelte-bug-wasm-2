@@ -5,18 +5,19 @@
 
   let { children } = $props();
 
+  let mountState = $state("mounting");
+
   onMount(async () => {
     console.log("mounting wasm");
-    //let res = init();
-    //foo();
-
     foo();
     console.log("mounted");
+    mountState = "mounted";
   });
 </script>
 
 <div class="app">
   <main>
-    {@render children()}
+    <div>{mountState}</div>
+    <div>{@render children()}</div>
   </main>
 </div>
